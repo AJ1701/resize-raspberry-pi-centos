@@ -11,11 +11,11 @@ then
 fi
 
 ROOT_DEVICE_FULL_NAME=$(lsblk | grep "/" | grep -v "boot" | sed 's/.*-//g' | awk '{ print $1 }')
-DEVICE_BASE_NAME=$(echo ${ROOT_PARTITION::-1})
-ROOT_DEVICE_PARTITION_NUMBER=$(echo "${ROOT_PARTITION: -1}")
-#echo $ROOT_PARTITION
-#echo $DEVICE_NAME
-#echo $ROOT_DEVICE_PARTITION_NUMBER
+DEVICE_BASE_NAME=$(echo ${ROOT_DEVICE_FULL_NAME::-1})
+ROOT_DEVICE_PARTITION_NUMBER=$(echo "${ROOT_DEVICE_FULL_NAME: -1}")
+echo $ROOT_PARTITION
+echo $DEVICE_NAME
+echo $ROOT_DEVICE_PARTITION_NUMBER
 echo "Running sudo growpart /dev/$DEVICE_NAME $ROOT_DEVICE_PARTITION_NUMBER"
 sudo growpart /dev/$DEVICE_NAME $ROOT_DEVICE_PARTITION_NUMBER
 echo "Running sudo resize2fs /dev/$ROOT_PARTITION"
