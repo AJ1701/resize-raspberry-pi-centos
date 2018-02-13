@@ -1,12 +1,13 @@
 #!/bin/bash
 if [ "$EUID" -ne 0 ]
-then echo "Please run as root with \"sudo $0\""
+then
+	echo "Please run as root with \"sudo $0\""
 	exit
 fi
 
 if [ ! -f /usr/bin/growpart ]
 then
-    echo "growpart is not installed. Run \"yum -y install growpart\" to install it."
+	echo "growpart is not installed. Run \"yum -y install growpart\" to install it."
 	exit
 fi
 
