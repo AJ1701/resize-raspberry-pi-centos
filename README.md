@@ -6,4 +6,4 @@ You may or may not have mixed results.
 # Requirements
 growpart
 
-Install with "yum install growpart" on CentOS.
+Install with "yum install growpart" on CentOS if not already installed.
