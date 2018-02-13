@@ -1,14 +1,14 @@
 #!/bin/bash
 if [ "$EUID" -ne 0 ]
 then
-	echo "Please run as root with \"sudo $0\""
-	exit
+echo "Please run as root with \"sudo $0\""
+exit
 fi
 
 if [ ! -f /usr/bin/growpart ]
 then
-	echo "growpart is not installed. Run \"yum -y install growpart\" to install it."
-	exit
+echo "growpart is not installed. Run \"yum -y install growpart\" to install it."
+exit
 fi
 
 ROOT_DEVICE_FULL_NAME=$(lsblk | grep "/" | grep -v "boot" | sed 's/.*-//g' | awk '{ print $1 }')
