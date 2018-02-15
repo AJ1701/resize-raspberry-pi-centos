@@ -19,4 +19,4 @@ Written by [A.J. Scgalski](https://github.com/AJ1701). Please see my GitHub acco
 Contributing
 ------------
 
-Submit issues and pull requests on GitHub at [resize-raspberry-pi-centos](resize-raspberry-pi-centos).
+Submit issues and pull requests on GitHub at [https://github.com/AJ1701/resize-raspberry-pi-centos](https://github.com/AJ1701/resize-raspberry-pi-centos).
