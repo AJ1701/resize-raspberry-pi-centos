@@ -7,3 +7,16 @@ Requirements
 ------------
 
 * Requires growpart (which is pre-installed in CentOS 7 for Raspberry Pi!)
+
+License
+-------
+MIT
+
+Author Information
+------------------
+Written by [A.J. Scgalski](https://github.com/AJ1701). Please see my GitHub account for my contact email.
+
+Contributing
+------------
+
+Submit issues and pull requests on GitHub at [resize-raspberry-pi-centos](resize-raspberry-pi-centos).
