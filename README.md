@@ -3,7 +3,7 @@ A short and sweet CentOS 7 script to expand the root partition on Raspberry Pi's
 
 You may or may not have mixed results.
 
-# Requirements
-growpart
+Requirements
+------------
 
-Install with "yum install growpart" on CentOS if not already installed.
+* Requires growpart (which is pre-installed in CentOS 7 for Raspberry Pi!)
